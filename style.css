@@ -35,13 +35,13 @@ body, h1, h2, h3, p, ul, li {
     justify-content: space-between;
 }
 .logo {
-    color: #00bfff;
+    color:#4E47FF;
     font-size: 2.125rem;
     font-weight: bold;
     font-family: "Inter", sans-serif;
 }
 .signup-btn {
-    background-color: #00bfff;
+    background-color: #4E47FF;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -55,7 +55,7 @@ body, h1, h2, h3, p, ul, li {
     box-shadow: 0px 0px 5px 1px #0000002b;
 }
 .signup-btn:hover {
-    background-color: #008ecc;
+    background-color: #4E47FF;
 }
 .main-content {
     width: 905px;
@@ -69,7 +69,7 @@ body, h1, h2, h3, p, ul, li {
     font-family: "Raleway", sans-serif;
 }
 .focus-btn {
-    background-color: #00bfff;
+    background-color: #4E47FF;
     color: white;
     padding: 12px 30px;
     border-radius: 6px;
@@ -114,7 +114,7 @@ body, h1, h2, h3, p, ul, li {
     width: 85%;
 }
 .action-left button {
-    background-color: #00bfff;
+    background-color: #4E47FF;
     color: white;
     border: none;
     padding: 12px 24px;
