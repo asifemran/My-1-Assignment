@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>My Dark UI Website</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+
+  /* Utility classes for spacing */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4f46e5; /* purple/blue tone */
+  }
+  nav a {
+    color: #a5b4fc;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav a:hover {
+    color: #3b82f6;
+  }
+
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 60px 20px;
+    flex-wrap: wrap;
+  }
+  .hero-text {
+    max-width: 50%;
+  }
+  .hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .hero-text p {
+    font-size: 1.2em;
+  }
+  .hero-btn {
+    display: inline-block;
+    background-color: #4f46e5;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .hero-btn:hover {
+    background-color: #3b82f6;
+  }
+  /* Image placeholder for hero */
+  .hero-image {
+    max-width: 45%;
+    min-width: 300px;
+  }
+  .hero-image img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  /* Logo & Intro */
+  .logo-section {
+    background-color: #1f1f1f;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-section h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #6366f1;
+  }
+  .logo-section p {
+    max-width: 700px;
+    color: #a5b4fc;
+  }
+  .logo-section nav {
+    margin-top: 20px;
+  }
+  .logo-section nav a {
+    margin: 0 15px;
+    color: #a5b4fc;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .logo-section nav a:hover {
+    color: #6366f1;
+  }
+
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f3f4f6;
+    color: #111827;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+    margin: 20px;
+  }
+  .stat h3 {
+    font-size: 2em;
+    color: #4f46e5;
+    margin-bottom: 10px;
+  }
+  .stat p {
+    font-size: 1.2em;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 40px 20px;
+  }
+  .testimonials h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+  }
+  .card p {
+    font-style: italic;
+  }
+  .card .reviewer {
+    margin-top: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  .reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* Contact Form */
+  .contact {
+    padding: 40px 20px;
+    background-color: #f3f4f6;
+  }
+  .contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    font-family: Arial, sans-serif;
+  }
+  input[type="text"], input[type="email"] {
+    height: 50px;
+  }
+  textarea {
+    height: 150px;
+  }
+  .btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #4f46e5;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  .btn-submit:hover {
+    background-color: #3b82f6;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #a5b4fc;
+  }
+
+  /* Responsive */
+  @media(max-width: 768px){
+    .hero {
+      flex-direction: column;
+    }
+    .hero-text, .hero-image {
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="container">
+  <div class="logo">LOGO</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero container">
+  <div class="hero-text">
+    <h1>See it in Action</h1>
+    <p>Explore the live preview and imagine your brand in this bold new look.</p>
+    <a href="#" class="hero-btn">Launch Live Preview</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://via.placeholder.com/500x300" alt="Webflow Conference" />
+  </div>
+</section>
+
+<!-- Logo & About -->
+<section class="logo-section">
+  <h2>Cool Dark UI Template for Webflow Agencies!</h2>
+  <p>Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring your vision to life.</p>
+  <div>
+    <a href="#" class="hero-btn">Stay Focused</a>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats container">
+  <div class="stat">
+    <h3>50K</h3>
+    <p>Active Users</p>
+  </div>
+  <div class="stat">
+    <h3>2M+</h3>
+    <p>Focus Sessions</p>
+  </div>
+  <div class="stat">
+    <h3>95%</h3>
+    <p>Satisfaction Rate</p>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <h2>What our users say</h2>
+  <div class="testimonial-cards container">
+    <div class="card">
+      <p>“This template instantly leveled up our presence.”</p>
+      <div class="reviewer">
+        <img src="https://via.placeholder.com/40" alt="Reviewer" />
+        <div>
+          <div>Reviewer Name</div>
+          <div>Date</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <p>“Loved by designers, easy to customize and sleek!”</p>
+      <div class="reviewer">
+        <img src="https://via.placeholder.com/40" alt="Reviewer" />
+        <div>
+          <div>Reviewer Name</div>
+          <div>Date</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <p>“A perfect template for modern agencies.”</p>
+      <div class="reviewer">
+        <img src="https://via.placeholder.com/40" alt="Reviewer" />
+        <div>
+          <div>Reviewer Name</div>
+          <div>Date</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact">
+  <h2 style="text-align:center;">Let's Get in Touch</h2>
+  <div class="container">
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Full Name" required />
+      <textarea placeholder="Write your message..." required></textarea>
+      <button type="submit" class="btn-submit">Get in Touch</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2023 Your Company. All rights reserved.
+</footer>
+
+</body>
+</html>
